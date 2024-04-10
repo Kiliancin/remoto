@@ -68,4 +68,29 @@ public class main {
 		System.out.println("La multiplicacion de los dos numeros es: " + (num1*num2));
 	}
 	
+	public static void restar2() {
+		int num1 = 0;
+		int num2 = 0;
+		
+		System.out.println("Dime el primer numero: ");
+		num1 = sn.nextInt();
+		
+		System.out.println("Dime el segundo numero: ");
+		num2 = sn.nextInt();
+		
+		System.out.println("La resta de los dos numeros es: " + (num1-num2));
+	}
+	
+	public static void dividir2() {
+		int num1 = 0;
+		int num2 = 0;
+		
+		System.out.println("Dime el primer numero: ");
+		num1 = sn.nextInt();
+		
+		System.out.println("Dime el segundo numero: ");
+		num2 = sn.nextInt();
+		
+		System.out.println("La division de los dos numeros es: " + (num1/num2));
+	}
 }
