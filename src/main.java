@@ -24,12 +24,13 @@ public class main {
 			opc = sn.nextInt();
 			switch (opc) {
 			case 1:
-				sumar2();
+				sumar();
 				break;
 
 			case 2:
-				multiplicar2();
+				multiplicar();
 				break;
+				
 			case 3:
 				System.out.println("Adios!");
 				break;
@@ -42,30 +43,40 @@ public class main {
 		} while (opc != 3);
 	}
 	
-	public static void sumar2() {
-		int num1 = 0;
-		int num2 = 0;
+	public static void sumar() {
+		int cantidad = 0;
+		int result = 0;
 		
-		System.out.println("Dime el primer numero: ");
-		num1 = sn.nextInt();
+		System.out.println("Con cuantos numeros vas a operar? ");
+		cantidad = sn.nextInt();
 		
-		System.out.println("Dime el segundo numero: ");
-		num2 = sn.nextInt();
+		for (int i = 0; i < cantidad; i++) {
+			System.out.println("Dime el numero " + (i+1) + " para sumar: ");
+			int num = sn.nextInt();
+			
+			result += num;
+		}
 		
-		System.out.println("La suma de los dos numeros es: " + (num1+num2));
+		
+		System.out.println("La suma de los numeros es: " + result);
 	}
 	
-	public static void multiplicar2() {
-		int num1 = 0;
-		int num2 = 0;
+	public static void multiplicar() {
+		int cantidad = 0;
+		int result = 0;
 		
-		System.out.println("Dime el primer numero: ");
-		num1 = sn.nextInt();
+		System.out.println("Con cuantos numeros vas a operar? ");
+		cantidad = sn.nextInt();
 		
-		System.out.println("Dime el segundo numero: ");
-		num2 = sn.nextInt();
+		for (int i = 0; i < cantidad; i++) {
+			System.out.println("Dime el numero " + (i+1) + " para multiplicar: ");
+			int num = sn.nextInt();
+			
+			result *= num;
+		}
 		
-		System.out.println("La multiplicacion de los dos numeros es: " + (num1*num2));
+		
+		System.out.println("La multiplicacion de los numeros es: " + result);
 	}
 	
 }
