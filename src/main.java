@@ -18,9 +18,11 @@ public class main {
 		
 		do {
 			System.out.println("Elige una opcion: ");
-			System.out.println("1. Sumar dos numeros");
-			System.out.println("2. Multiplicar dos numeros");
-			System.out.println("3. Salir");
+			System.out.println("1. Sumar numeros");
+			System.out.println("2. Multiplicar numeros");
+			System.out.println("3. Restar dos numeros: ");
+			System.out.println("4. Dividir dos numeros: ");
+			System.out.println("5. Salir");
 			opc = sn.nextInt();
 			switch (opc) {
 			case 1:
@@ -32,6 +34,14 @@ public class main {
 				break;
 				
 			case 3:
+				restar2();
+				break;
+				
+			case 4:
+				dividir2();
+				break;
+				
+			case 5:
 				System.out.println("Adios!");
 				break;
 				
@@ -40,7 +50,7 @@ public class main {
 				break;
 			}
 			
-		} while (opc != 3);
+		} while (opc != 5);
 	}
 	
 	public static void sumar() {
